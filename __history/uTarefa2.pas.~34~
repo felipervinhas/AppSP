@@ -1,0 +1,127 @@
+unit uTarefa2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.NumberBox,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, uspQuery, Vcl.ComCtrls, System.Threading;
+
+
+  const
+  WM_UPDATE_PB = WM_USER;
+type
+  TFTarefa2 = class(TForm)
+    GridPanel1: TGridPanel;
+    LabelCol: TLabel;
+    LabelTab: TLabel;
+    Button1: TButton;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    GridPanel2: TGridPanel;
+    GridPanel3: TGridPanel;
+    Label1: TLabel;
+    NumberBox1: TNumberBox;
+    Label2: TLabel;
+    NumberBox2: TNumberBox;
+    ProgressBar1: TProgressBar;
+    ProgressBar2: TProgressBar;
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Button1Click(Sender: TObject);
+
+  private
+    procedure PrintValue(Memo: TMemo; Value: Integer);
+    { Private declarations }
+  public
+
+     procedure WMUpdatePB(var msg: TMessage); message WM_UPDATE_PB;
+
+  end;
+
+
+var
+  FTarefa2: TFTarefa2;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure UpdateFromThreadViaMessage;
+var
+  i: integer;
+begin
+  for i := 1 to 100 do begin
+    Sleep(20);
+    PostMessage(FTarefa2.Handle, WM_UPDATE_PB, i, 0);
+  end;
+end;
+
+
+procedure UpdateFromThreadViaQueue;
+var
+  i: integer;
+begin
+  for i := 1 to 100 do begin
+    Sleep(20);
+    TThread.Queue(nil,
+      procedure begin
+        Form12.ProgressBar2.Position := i;
+      end);
+  end;
+end;
+
+
+procedure TFTarefa2.Button1Click(Sender: TObject);
+begin
+  TThread.CreateAnonymousThread(UpdateFromThreadViaMessage).Start;
+  TThread.CreateAnonymousThread(UpdateFromThreadViaQueue).Start;
+end;
+
+
+
+
+procedure TFTarefa2.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+ Action:= caFree;
+end;
+
+procedure TFTarefa2.FormCreate(Sender: TObject);
+begin
+  Self.FormStyle := TFormStyle.fsMDIChild;
+  Self.WindowState := TWindowState.wsMaximized;
+end;
+
+
+
+procedure TFTarefa2.PrintValue(Memo : TMemo; Value: Integer);
+begin
+ TThread.Queue(nil,
+    procedure
+    begin
+      Memo.Lines.Add( Value.ToString );
+      if (memo.Name = 'Memo1') then
+      begin
+        ProgressBar1.Position := Value;
+      end
+      else
+      if (memo.Name = 'Memo2') then
+      begin
+        ProgressBar2.Position := Value;
+      end;
+      Application.ProcessMessages;
+
+    end
+  );
+end;
+
+procedure TFTarefa2.WMUpdatePB(var msg: TMessage);
+begin
+  ProgressBar1.Position := msg.WParam;
+end;
+
+end.

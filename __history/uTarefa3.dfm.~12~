@@ -1,0 +1,131 @@
+object FTarefa3: TFTarefa3
+  Left = 0
+  Top = 0
+  Caption = 'Tarefa 3'
+  ClientHeight = 545
+  ClientWidth = 932
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  Visible = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 15
+  object Label1: TLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 926
+    Height = 15
+    Align = alTop
+    Caption = 'Valor do Projeto'
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    ExplicitWidth = 84
+  end
+  object DBGrid1: TDBGrid
+    AlignWithMargins = True
+    Left = 3
+    Top = 24
+    Width = 926
+    Height = 389
+    Align = alClient
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'IdProjeto'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NomeProjeto'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Valor'
+        Visible = True
+      end>
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 416
+    Width = 932
+    Height = 129
+    Align = alBottom
+    TabOrder = 1
+    ExplicitLeft = -3
+    ExplicitTop = 419
+    object Label2: TLabel
+      AlignWithMargins = True
+      Left = 776
+      Top = 11
+      Width = 41
+      Height = 15
+      Caption = 'Total R$'
+    end
+    object Label3: TLabel
+      AlignWithMargins = True
+      Left = 776
+      Top = 67
+      Width = 87
+      Height = 15
+      Caption = 'Total Divis'#245'es R$'
+    end
+    object Edit1: TEdit
+      Left = 776
+      Top = 32
+      Width = 121
+      Height = 23
+      TabOrder = 0
+      Text = '0,00'
+    end
+    object Edit2: TEdit
+      Left = 776
+      Top = 88
+      Width = 121
+      Height = 23
+      TabOrder = 1
+      Text = '0,00'
+    end
+    object Button1: TButton
+      Left = 640
+      Top = 32
+      Width = 130
+      Height = 25
+      Caption = 'Obter Total'
+      TabOrder = 2
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 640
+      Top = 88
+      Width = 130
+      Height = 25
+      Caption = 'Obter Total Divis'#245'es'
+      TabOrder = 3
+      OnClick = Button2Click
+    end
+    object DBEdit1: TDBEdit
+      Left = 352
+      Top = 56
+      Width = 121
+      Height = 23
+      DataField = 'TotalGeral'
+      TabOrder = 4
+    end
+  end
+end

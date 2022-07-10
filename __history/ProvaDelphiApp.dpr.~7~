@@ -1,0 +1,18 @@
+program ProvaDelphiApp;
+
+uses
+  Vcl.Forms,
+  ufprincipal in 'ufprincipal.pas' {fPrincipal},
+  uspQuery in 'Lib\uspQuery.pas',
+  uTarefa2 in 'uTarefa2.pas' {FTarefa2},
+  uTarefa1 in 'uTarefa1.pas' {FTarefa1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfPrincipal, fPrincipal);
+  Application.CreateForm(TFTarefa1, FTarefa1);
+  Application.Run;
+end.

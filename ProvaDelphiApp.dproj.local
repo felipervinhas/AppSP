@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/05/13 08:51:43.000.700,=C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/06/01 10:17:51.000.219,=C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/06/01 10:19:26.000.543,=C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/07/07 19:49:55.000.990,=C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2022/07/07 19:52:02.000.913,C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Unit4.dfm=C:\Negocios\Softplan\ufprincipal.dfm</Transaction>
+    <Transaction>2022/07/07 19:52:02.000.913,C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Unit4.pas=C:\Negocios\Softplan\ufprincipal.pas</Transaction>
+    <Transaction>2022/07/07 19:52:06.000.768,C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\Project3.dproj=C:\Negocios\Softplan\ProvaDelphiApp.dproj</Transaction>
+    <Transaction>2022/07/07 20:32:00.000.129,=C:\Negocios\Softplan\Lib\uspQuery.pas</Transaction>
+    <Transaction>2022/07/08 17:36:56.000.860,=C:\Negocios\Softplan\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 17:37:04.000.055,=C:\Negocios\Softplan\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 17:41:31.000.132,C:\Negocios\Softplan\Unit1.pas=C:\Negocios\Softplan\uTarefa1.pas</Transaction>
+    <Transaction>2022/07/08 17:41:31.000.132,C:\Negocios\Softplan\Unit1.dfm=C:\Negocios\Softplan\uTarefa1.dfm</Transaction>
+    <Transaction>2022/07/09 11:31:06.000.204,C:\Negocios\Softplan\uTarefa1.dfm=C:\Negocios\Softplan\uTarefa2.dfm</Transaction>
+    <Transaction>2022/07/09 11:31:06.000.204,C:\Negocios\Softplan\uTarefa1.pas=C:\Negocios\Softplan\uTarefa2.pas</Transaction>
+    <Transaction>2022/07/09 11:31:21.000.652,=C:\Negocios\Softplan\uTarefa1.pas</Transaction>
+    <Transaction>2022/07/09 13:48:25.000.412,C:\Negocios\Softplan\uTarefa3.pas=C:\Negocios\Softplan\uTarefa2.pas</Transaction>
+    <Transaction>2022/07/09 13:48:25.000.412,C:\Negocios\Softplan\uTarefa3.dfm=C:\Negocios\Softplan\uTarefa2.dfm</Transaction>
+    <Transaction>2022/07/09 13:48:44.000.011,=C:\Negocios\Softplan\uTarefa2.pas</Transaction>
+    <Transaction>2022/07/10 12:30:41.000.596,C:\Negocios\Softplan\uTarefa3.pas=</Transaction>
+    <Transaction>2022/07/10 12:30:41.000.699,C:\Negocios\Softplan\uTarefa2.pas=</Transaction>
+    <Transaction>2022/07/10 12:31:14.000.781,=C:\Negocios\Softplan\ufTarefa2.pas</Transaction>
+    <Transaction>2022/07/10 12:31:14.000.699,=C:\Negocios\Softplan\ufTarefa1.pas</Transaction>
+    <Transaction>2022/07/10 12:31:14.000.855,=C:\Negocios\Softplan\ufTarefa3.pas</Transaction>
+    <Transaction>2022/07/10 12:33:13.000.669,C:\Negocios\Softplan\ufTarefa2.pas=</Transaction>
+    <Transaction>2022/07/10 12:33:13.000.747,C:\Negocios\Softplan\ufTarefa1.pas=</Transaction>
+    <Transaction>2022/07/10 12:33:13.000.569,C:\Negocios\Softplan\ufTarefa3.pas=</Transaction>
+    <Transaction>2022/07/10 12:34:18.000.861,=C:\Negocios\Softplan\ufTarefa1.pas</Transaction>
+    <Transaction>2022/07/10 12:34:22.000.290,=C:\Negocios\Softplan\ufTarefa2.pas</Transaction>
+    <Transaction>2022/07/10 12:34:25.000.412,=C:\Negocios\Softplan\ufTarefa3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

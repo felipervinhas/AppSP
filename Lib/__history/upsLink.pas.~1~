@@ -1,0 +1,30 @@
+unit upsLink;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Phys,
+  FireDAC.Phys.SQLite;
+
+type
+  TFDPhysSQLiteDriverLink1 = class(TFDPhysSQLiteDriverLink)
+  private
+    { Private declarations }
+  protected
+    { Protected declarations }
+  public
+    { Public declarations }
+  published
+    { Published declarations }
+  end;
+
+procedure Register;
+
+implementation
+
+procedure Register;
+begin
+  RegisterComponents('SpComponentes', [TFDPhysSQLiteDriverLink1]);
+end;
+
+end.

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/07 20:29:17.000.984,=rtl.dcp</Transaction>
+    <Transaction>2022/07/07 20:29:18.000.392,=vclactnband.dcp</Transaction>
+    <Transaction>2022/07/07 20:29:18.000.278,=C:\Negocios\Softplan\Lib\uspQuery.pas</Transaction>
+    <Transaction>2022/07/07 20:29:18.000.360,=vcl.dcp</Transaction>
+    <Transaction>2022/07/07 20:29:18.000.486,=xmlrtl.dcp</Transaction>
+    <Transaction>2022/07/07 20:29:18.000.312,=designide.dcp</Transaction>
+    <Transaction>2022/07/07 20:29:18.000.437,=vclx.dcp</Transaction>
+    <Transaction>2022/07/09 10:56:45.000.157,=dbrtl.dcp</Transaction>
+    <Transaction>2022/07/09 10:56:45.000.423,=FireDACSqliteDriver.dcp</Transaction>
+    <Transaction>2022/07/09 10:56:45.000.320,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2022/07/09 10:56:45.000.227,=FireDAC.dcp</Transaction>
+    <Transaction>2022/07/09 10:56:45.000.364,=FireDACCommon.dcp</Transaction>
+    <Transaction>2022/07/09 10:59:37.000.108,C:\Users\Microdata\OneDrive - Microdata Sistemas\Documentos\Embarcadero\Studio\Projects\spComponentes.dproj=C:\Negocios\Softplan\spComponentes.dproj</Transaction>
+    <Transaction>2022/07/09 11:03:38.000.366,=C:\Negocios\Softplan\Lib\upsLink.pas</Transaction>
+    <Transaction>2022/07/09 11:09:50.000.759,C:\Negocios\Softplan\Lib\upsLink.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,196 @@
+object FTarefa1: TFTarefa1
+  Left = 0
+  Top = 0
+  Caption = 'Tarefa 1'
+  ClientHeight = 545
+  ClientWidth = 932
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 15
+  object Label1: TLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 236
+    Width = 926
+    Height = 18
+    Align = alTop
+    Caption = 'Colunas'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+    ExplicitWidth = 65
+  end
+  object GridPanel1: TGridPanel
+    Left = 0
+    Top = 0
+    Width = 932
+    Height = 233
+    Align = alTop
+    ColumnCollection = <
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333310000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = LabelCol
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = LabelTab
+        Row = 0
+      end
+      item
+        Column = 2
+        Control = LabelCon
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = MemoCol
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = MemoTab
+        Row = 1
+      end
+      item
+        Column = 2
+        Control = MemoCon
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 23.076923076923080000
+      end
+      item
+        Value = 76.923076923076920000
+      end>
+    TabOrder = 0
+    object LabelCol: TLabel
+      AlignWithMargins = True
+      Left = 4
+      Top = 4
+      Width = 304
+      Height = 47
+      Align = alClient
+      Caption = 'Colunas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      ExplicitWidth = 65
+      ExplicitHeight = 18
+    end
+    object LabelTab: TLabel
+      AlignWithMargins = True
+      Left = 314
+      Top = 4
+      Width = 304
+      Height = 47
+      Align = alClient
+      Caption = 'Tabelas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      ExplicitWidth = 62
+      ExplicitHeight = 18
+    end
+    object LabelCon: TLabel
+      AlignWithMargins = True
+      Left = 624
+      Top = 4
+      Width = 304
+      Height = 47
+      Align = alClient
+      Caption = 'Condi'#231#245'es'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      ExplicitWidth = 83
+      ExplicitHeight = 18
+    end
+    object MemoCol: TMemo
+      AlignWithMargins = True
+      Left = 4
+      Top = 57
+      Width = 304
+      Height = 172
+      Align = alClient
+      TabOrder = 0
+    end
+    object MemoTab: TMemo
+      AlignWithMargins = True
+      Left = 314
+      Top = 57
+      Width = 304
+      Height = 172
+      Align = alClient
+      TabOrder = 1
+    end
+    object MemoCon: TMemo
+      AlignWithMargins = True
+      Left = 624
+      Top = 57
+      Width = 304
+      Height = 172
+      Align = alClient
+      TabOrder = 2
+    end
+  end
+  object MemoResposta: TMemo
+    AlignWithMargins = True
+    Left = 3
+    Top = 260
+    Width = 926
+    Height = 222
+    Align = alClient
+    TabOrder = 1
+  end
+  object Button1: TButton
+    AlignWithMargins = True
+    Left = 3
+    Top = 488
+    Width = 926
+    Height = 54
+    Align = alBottom
+    Caption = 'Gerar SQL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object spQuery1: TspQuery
+    Left = 408
+    Top = 208
+  end
+end

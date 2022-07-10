@@ -1,0 +1,15 @@
+program ProvaDelphiApp;
+
+uses
+  Vcl.Forms,
+  ufprincipal in 'ufprincipal.pas' {fPrincipal},
+  uspQuery in 'Lib\uspQuery.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfPrincipal, fPrincipal);
+  Application.Run;
+end.
